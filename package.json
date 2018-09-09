@@ -1,0 +1,39 @@
+{
+  "name": "egzaminy-technik-informatyk",
+  "version": "1.0.0",
+  "description": "This is a PWA web application created some time ago to help me and other students study computer science.",
+  "author": "ol-web",
+  "scripts": {
+    "dev": "parcel serve -d dist src/index.html",
+    "build": "parcel build --no-cache --public-url \".\" -d dist src/index.html",
+    "sw": "workbox generateSW workbox-config.js"
+  },
+  "cache": {
+    "inDev": false,
+    "strategy": "default"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.2",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "image-to-base64": "^1.3.5",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.8.1",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "postcss-modules": "^1.1.0",
+    "workbox-cli": "^3.2.0"
+  },
+  "dependencies": {
+    "generate-quiz": "^1.0.0",
+    "html-entities": "^1.2.1",
+    "image2base64": "0.0.3",
+    "lodash": "latest",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "superagent": "latest"
+  }
+}
